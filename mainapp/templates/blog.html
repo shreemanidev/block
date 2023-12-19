@@ -1,0 +1,17 @@
+{%extends "index.html"%}
+{%load static%}
+{%block body%}
+
+<main>
+    <article>
+        <h2>{{sblog.title}}</h2>
+        <img src="{{sblog.img.url}}" height="200px" width="355px" alt="">
+        <p>{{sblog.content}}</p>
+        <div class="card-date">
+            <p>Post on: {{sblog.date}}</p>
+        </div>
+    </article>
+</main>
+
+{%endblock%}
+    
